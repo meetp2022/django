@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends 'Batman/base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Batman Biography</title>
+    <link rel="stylesheet" href="{% static 'css/bat.css'%}">
+</head>
+<body>
+
+
+{%block base_block%}
+
+<p>
+<img align="left" src="{% static 'images/batlogo.png' %}" alt="Meet"><img align="right" src="{% static 'images/batlogo.png' %}" alt="Meet">
+    <div><center><h6> My name is {{Name}}. I belong to the {{City}} city. They call me</h6><h4> BATMAN</h4></center>
+ </div>
+
+</p>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/Bat1.jpg' %}" class="d-block w-100" alt="Bat1">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/Bat2.png' %}" class="d-block w-100" alt="Bat2">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/Bat3.jpg' %}" class="d-block w-100" alt="Bat3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+{%endblock%}
+</body>
+</html>

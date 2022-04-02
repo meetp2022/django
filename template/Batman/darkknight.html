@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'Batman/base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Dark Knight</title>
+</head>
+<body>
+{%block base_block%}
+<h1>The Dark Knight (2008) </h1>
+<h4>Batman (Christian Bale) has to keep a balance between heroism and vigilantism to fight a vile criminal known as the Joker (Heath Ledger), who would plunge Gotham City into anarchy.</h4>
+<h3> IMDb: 9.0/10  </h3>
+<img src="{% static 'images/dark_knight.jpg' %}" alt="batman_darkkinght">
+{%endblock%}
+</body>
+</html>

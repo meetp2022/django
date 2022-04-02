@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends 'Batman/base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+          float: left;
+          height: 250px;
+          width: 23%;
+          padding: 0 10px;
+            }
+    </style>
+
+
+</head>
+<body>
+{%block base_block%}
+
+<p>
+<img align="left" src="{% static 'images/batlogo.png' %}" alt="Meet"><img align="right" src="{% static 'images/batlogo.png' %}" alt="Meet">
+    <div><center><h6> My name is {{Name}}. I belong to the {{City}} city. They call me</h6><h4> BATMAN</h4></center>
+ </div>
+
+</p>
+
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/Bateternal.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Batman Eternal</h5>
+    <p class="card-text">A new weekly Batman series that examines the relationship between the heroes, villains, and citizens of Gotham City! In the wake of Forever Evil, the world looks at heroes in a different light, creating tension between Batman and his allies and the Gotham City Police Department..</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/Bateternal.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Batman Eternal</h5>
+    <p class="card-text">A new weekly Batman series that examines the relationship between the heroes, villains, and citizens of Gotham City! In the wake of Forever Evil, the world looks at heroes in a different light, creating tension between Batman and his allies and the Gotham City Police Department..</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Dark card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+{%endblock%}
+</body>
+</html>

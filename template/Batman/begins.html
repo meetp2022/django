@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'Batman/base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%block base_block%}
+<h1>Batman Begins (2005) </h1>
+<h4>Following the death of his parents, young heir Bruce Wayne (Christian Bale) becomes a masked avenger who fights the forces of evil in Gotham City.</h4>
+<h3> IMDb: 8.2/10  </h3>
+<img src="{% static 'images/batman_begins.png' %}" alt="batman_begins">
+{%endblock%}
+</body>
+</html>

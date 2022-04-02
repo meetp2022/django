@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Information about Superman</h1>
+{% if data %}
+<table border="1" margin="auto">
+    <th>id</th>
+    <th>Name</th>
+    <th>city</th>
+    <th>Comics</th>
+{% for d in data %}
+    <tr>
+<td>{{d.id}}</td>
+<td>{{d.name}}</td>
+<td>{{d.city}}</td>
+<td>{{d.Comics}}</td>
+        </tr>
+
+{%endfor%}
+    </table>
+{%else%}
+<h1> no reocord found</h1>
+{%endif%}
+</body>
+</html>

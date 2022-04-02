@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'Batman/base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback form</title>
+    <style>
+    p {background-image: url('dark_knight.jpg');}
+    </style>
+</head>
+<body>
+{%block base_block%}
+<h1>Welcome to the world of DC</h1>
+<div class="container"align="center">
+    <form method="post">
+     {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" class="btn btn-primary" name="" value="Submit">
+    </form>
+
+
+</div>
+
+{%endblock%}
+</body>
+</html>
